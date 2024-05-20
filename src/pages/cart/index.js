@@ -2,7 +2,7 @@ import {CartContext} from '@/utils/ContextReducer';
 import React,{useState,useContext} from 'react'
 import {useRouter} from 'next/router';
 import Link from 'next/link';
-export default function cart() {
+export default function Cart() {
   const { state, dispatch } = useContext(CartContext);
   const [errorMessage, setErrorMessage] = useState(
     "Your order was canceled 😔"
