@@ -14,20 +14,41 @@ function CarouselComponent() {
       emulateTouch
       showThumbs={false}
     >
-      {imageProp.map((image, index) => {
-        return (
+      
+        
           <div
-            key={index}
+          
             style={{ maxHeight: "36rem" }}
             className="object-center brightness-50"
           >
             <img
-              src={`https://source.unsplash.com/random/900x600/?${image}`}
+              src=".\top-view-fast-food-table.jpg"
               alt="pizza"
             />
           </div>
-        );
-      })}
+          <div
+          
+            style={{ maxHeight: "36rem" }}
+            className="object-center brightness-50"
+          >
+            <img
+              src=".\top-view-fast-food-mix-mozzarella-sticks-club-sandwich-hamburger-mushroom-pizza-caesar-shrimp-salad-french-fries-ketchup-mayo-cheese-sauces-table.jpg"
+              alt="pizza"
+            />
+          </div>
+          <div
+          
+            style={{ maxHeight: "36rem" }}
+            className="object-center brightness-50"
+          >
+            <img
+              src=".\fast-food-tray-white-table.jpg"
+              alt="pizza"
+            />
+          </div>
+          
+    
+   
     </Carousel>
   );
 }
